@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Formulário 01/cursodev.css" media="screen">
+    <title>Curso Desenvolvedor</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro Curso Dev</h1>
+        <p id="subtitulo">Informe seus dados para Cadastro</p>
+        <br>
+    </div>
+    
+    <form>
+        <fieldset class=grupo>
+            <div class=campo>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" id="nome" name="nome" placeholder="Informe seu nome" required>
+            </div>
+
+            <div class=campo>
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="Informe seu sobrenome" required>
+            </div>
+
+            <div class=campo>
+                <label for=email><strong>E-mail</strong></label>
+                <input type="text" id="email" name="email" placeholder="Informe seu e-mail">
+            </div>
+        </fieldset>
+
+            <div class=campo>
+                <label for="sexo"><strong>Qual o seu sexo?</strong></label>
+                <input type="radio" id="sexo" name="sexo" required value="M">Masculino
+                <input type="radio" id="sexo" name="sexo" required value="F">Feminino
+            </div>
+
+            <br>
+
+            <div class=campo>
+                <label for="tecnologia"><strong>Quais cursos você pretende fazer?</strong></label>
+                <br>
+                <input type="checkbox" id="tecnologia" name="tecnolgia" > HTML
+                <input type="checkbox" id="tecnologia" name="tecnolgia" > CSS
+                <input type="checkbox" id="tecnologia" name="tecnolgia" > Javascript
+                <input type="checkbox" id="tecnologia" name="tecnolgia" > PHP
+                <input type="checkbox" id="tecnologia" name="tecnolgia" > Typescript
+                <input type="checkbox" id="tecnologia" name="tecnolgia" > Java
+
+            </div>
+
+        <fieldset class=grupo>
+            <div class=campo>
+                <label for="modalidade"><strong>Qual a modalidade do curso?</strong></label>
+                <select>
+                    <option value="">Selecione</option>
+                    <option>Presencial</option>
+                    <option>EAD</option>
+
+                </select>
+            </div>
+        </fieldset>
+        
+        <fieldset class=grupo>
+           <div class=campo>
+            <label for="texto"><strong>Qual o seu objetivo na área de tecnologia?</strong></label>
+            <textarea rows="10" cols="45" style="resize: none;"></textarea>
+           </div> 
+        </fieldset>
+
+        <br>
+        <button class="botao" type="submit" onsubmit="">Enviar</button>
+
+
+
+
+
+    </form>
+</body>
+</html>
